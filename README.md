@@ -173,12 +173,12 @@ I'm a passionate **FullStack Developer** with 5+ years of experience building ro
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=andres-enciso7u&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andres-enciso7u&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=andres-enciso&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andres-enciso&layout=compact&langs_count=8&theme=tokyonight"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=andres-enciso7u&theme=tokyonight" alt="GitHub Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=andres-enciso&theme=tokyonight" alt="GitHub Streak"/>
 </div>
 
 ---
@@ -214,7 +214,7 @@ I'm a passionate **FullStack Developer** with 5+ years of experience building ro
 ## 📊 GitHub Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=andres-enciso7u&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=andres-enciso&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
 </div>
 
 ---
