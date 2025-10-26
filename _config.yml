@@ -1,0 +1,47 @@
+# Site settings
+title: Andrés Enciso
+description: FullStack Developer & Database Administrator - 5+ years building scalable web applications and managing enterprise databases
+author: Andrés Enciso
+email: andresenciso20@gmail.com
+url: "https://andres-enciso.github.io"
+baseurl: ""
+
+# GitHub Pages settings
+repository: andres-enciso/andres-enciso.github.io
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - cv.pdf
+
+# Collections and defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Social links
+github_username: andres-enciso
+linkedin_username: andres-enciso7u
+phone: "+52 3323214058"
+
+# Sass settings
+sass:
+  style: compressed

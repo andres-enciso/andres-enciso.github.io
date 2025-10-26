@@ -1,6 +1,14 @@
----
-layout: default
-title: Andrés Enciso
+# Andrés Enciso - Portfolio
+
+This is my personal portfolio website hosted on GitHub Pages.
+
+Visit the live site: [https://andres-enciso.github.io](https://andres-enciso.github.io)
+
+## Tech Stack
+- Jekyll for static site generation
+- GitHub Pages for hosting
+- Custom CSS and layouts
+
 ---
 
 # Hi there! I'm Andrés Enciso 👋
