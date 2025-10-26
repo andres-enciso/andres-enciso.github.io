@@ -3,11 +3,25 @@ layout: default
 title: Home
 ---
 
+<div align="center">
+
 # Hi there! I'm Andrés Enciso 👋
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&multiline=true&width=800&height=100&lines=FullStack+Developer+%F0%9F%92%BB;Database+Administrator+%F0%9F%97%84%EF%B8%8F;5%2B+Years+of+Experience+%F0%9F%9A%80)
+
+![Profile Views](https://komarev.com/ghpvc/?username=andres-enciso&color=2563eb&style=for-the-badge&label=Profile+Views)
+![GitHub followers](https://img.shields.io/github/followers/andres-enciso?style=for-the-badge&color=2563eb)
+![GitHub User's stars](https://img.shields.io/github/stars/andres-enciso?style=for-the-badge&color=2563eb)
+
+[![Download CV](https://img.shields.io/badge/Download-CV-2563eb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/andres-enciso/andres-enciso.github.io/raw/main/cv.pdf)
+
+</div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=FullStack%20Developer&fontSize=70&fontAlignY=35&animation=fadeIn" />
 </div>
+
+---
 
 ## 🚀 About Me
 
@@ -19,13 +33,15 @@ I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ 
 - 🏗️ Developing scalable web applications with modern frameworks
 - 🚀 Automating business processes and workflows
 - 💡 Implementing microservices architectures
+- 🤖 Exploring AI and Machine Learning applications
 
 ---
 
 ## 💼 Professional Experience
 
-### **Database Administrator**
-**Tecnología y Diseño Industrial** | Jul 2024 - Present
+<details open>
+<summary><b>Database Administrator</b> - Tecnología y Diseño Industrial (Jul 2024 - Present)</summary>
+<br>
 
 - 🗄️ Manage SQL Server databases for 5+ corporate companies
 - 📈 Generate management reports through advanced queries from SAP Business One
@@ -34,16 +50,22 @@ I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ 
 - 🔍 Support internal and external audits
 - ⚡ Automate business processes for improved efficiency
 
-### **FullStack Developer**
-**SocialFlow** | Apr 2024 - May 2024
+</details>
+
+<details>
+<summary><b>FullStack Developer</b> - SocialFlow (Apr 2024 - May 2024)</summary>
+<br>
 
 - 📱 Maintained and resolved incidents in mobile applications (Vue.js, PHP, MySQL, Redis)
 - 💳 Implemented payment gateways
 - 🔄 Participated in migration to multiplatform architecture with React Native
 - 🐛 Bug fixing and performance optimization
 
-### **FullStack Developer**
-**Unidad de Desarrollo, Gobierno de Zapopan** | Nov 2021 - Apr 2024
+</details>
+
+<details>
+<summary><b>FullStack Developer</b> - Unidad de Desarrollo, Gobierno de Zapopan (Nov 2021 - Apr 2024)</summary>
+<br>
 
 - 💻 Developed and maintained web applications using PHP, JavaScript, jQuery, C#, .NET, Java, Angular, Laravel, and Symfony
 - 🗄️ Administered SQL and NoSQL databases
@@ -51,22 +73,30 @@ I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ 
 - 🏗️ Actively participated in designing and implementing scalable and modular software architectures
 - 🎯 Delivered multiple government digital services and platforms
 
-### **Requirements Analyst / Developer / Software Architect**
-**Voblakye** | Sept 2021 - Apr 2022
+</details>
+
+<details>
+<summary><b>Requirements Analyst / Developer / Software Architect</b> - Voblakye (Sept 2021 - Apr 2022)</summary>
+<br>
 
 - 🎯 Technical leadership in multiple projects from requirements gathering to production
 - 💻 Complete frontend/backend development with modern web technologies (Angular, Laravel, Symfony, NodeJS, React)
 - 🏗️ Designed scalable architectures
 - 🤝 Constant interaction with clients and stakeholders
 
-### **Programmer Analyst**
-**Innovación Gubernamental, Gobierno de Ocotlán** | 2019 - 2021
+</details>
+
+<details>
+<summary><b>Programmer Analyst</b> - Innovación Gubernamental, Gobierno de Ocotlán (2019 - 2021)</summary>
+<br>
 
 - 🛠️ Developed custom internal applications
 - 🖥️ Administered and monitored servers and databases
 - 📋 Agile project management (Scrum)
 - 🚨 Quick resolution of operational incidents to ensure continuity
 - 🗄️ Designed and implemented optimized relational structures
+
+</details>
 
 ---
 
@@ -189,34 +219,79 @@ A social media application with real-time features, image sharing, and user inte
 [yorento.com](https://yorento.com/) | React Native, Vue.js
 
 **Role**: Frontend Developer (~1 month)
+
 Mobile application for connecting informal vendors with customers. Participated in the development of the mobile app interface and user experience.
 
 ### **SocialFlow - Social Media Management**
 [socialflowapp.com](https://socialflowapp.com/) | React Native, Vue.js, PHP, MySQL
 
 **Role**: Mobile App Developer (~2 months)
+
 Worked on Android and iOS applications for social media management, implementing payment gateways and fixing critical bugs.
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats & Activity
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=andres-enciso&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=andres-enciso&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andres-enciso&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andres-enciso&layout=compact&theme=default&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=andres-enciso&theme=tokyonight&hide_border=true" alt="GitHub Streak Stats" />
 </div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=andres-enciso&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" />
+</div>
+
+### 🏆 GitHub Trophies
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=andres-enciso&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&row=1&column=7" alt="GitHub Trophies" />
+</div>
+
+---
+
+## 📜 Certifications & Licenses
+
+<div align="center">
+
+| Certification | Institution | Date | Credential |
+|--------------|-------------|------|------------|
+| 📊 **Analíticas y Métricas de Marketing** | Tecnológico de Monterrey | Oct 2025 | [2BU3XVS1V1GM](https://www.coursera.org/account/accomplishments/verify/2BU3XVS1V1GM) |
+| 🤖 **Business Implications of AI: A Nano-course** | EIT Digital Master School | Oct 2025 | [0U71MK541KBU](https://www.coursera.org/account/accomplishments/verify/0U71MK541KBU) |
+| 🚀 **Desarrollo rápido de productos innovadores** | Tecnológico de Monterrey | Oct 2025 | [LPUJTUWK5JZ6](https://www.coursera.org/account/accomplishments/verify/LPUJTUWK5JZ6) |
+| ☁️ **Google Cloud Fundamentals: Core Infrastructure** | Google Cloud Skills Boost | Oct 2025 | [4KM4LSR6QF6W](https://www.cloudskillsboost.google/public_profiles/credentials/4KM4LSR6QF6W) |
+| 📋 **Inicio y planificación de proyectos** | UC Irvine - Paul Merage School | Oct 2025 | [LPIT0MSZ5UZ6](https://www.coursera.org/account/accomplishments/verify/LPIT0MSZ5UZ6) |
+| 👨‍🏫 **Liderazgo Instruccional** | Pontificia Universidad Católica de Chile | Oct 2025 | [G7XOOUMUDORF](https://www.coursera.org/account/accomplishments/verify/G7XOOUMUDORF) |
+| 📊 **Camino a la Excelencia en Gestión de Proyectos** | Pontificia Universidad Católica de Chile | Aug 2025 | [4BSWL7Z7J90A](https://www.coursera.org/account/accomplishments/verify/4BSWL7Z7J90A) |
+| 💼 **Gestión Empresarial Exitosa para Pymes** | Pontificia Universidad Católica de Chile | Jul 2025 | [D05EX2G558VA](https://www.coursera.org/account/accomplishments/verify/D05EX2G558VA) |
+| 🤖 **Introducción a la IA Generativa** | Google Cloud Security | Jul 2025 | [K6F8ZKAM7PNM](https://www.cloudskillsboost.google/public_profiles/credentials/K6F8ZKAM7PNM) |
+| 🔐 **Introduction to Cybersecurity** | Cisco | Jun 2025 | [View Certificate](https://www.credly.com/badges/) |
+
+</div>
+
+### 🎓 Areas of Expertise (from Certifications)
+- 📊 Marketing Analytics & Business Intelligence
+- 🤖 Artificial Intelligence & Generative AI
+- ☁️ Cloud Computing (Google Cloud Platform)
+- 📋 Project Management & Agile Methodologies
+- 🔐 Cybersecurity Fundamentals
+- 💼 Business Management & Entrepreneurship
+- 👨‍🏫 Leadership & Team Management
 
 ---
 
 ## 🎓 Education
 
 **Ingeniería en Informática** (Computer Engineering)
+
 Universidad de Guadalajara
+
 Centro Universitario de la Ciénega - Ocotlán
-2015 - 2019
+
+📅 2015 - 2019
 
 ---
 
@@ -227,7 +302,22 @@ Centro Universitario de la Ciénega - Ocotlán
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/andres-enciso)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/andres-enciso7u)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andresenciso20@gmail.com)
-[![Phone](https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+523323214058)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/523323214058)
+[![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white)](https://www.coursera.org/user/andres-enciso)
+
+</div>
+
+<div align="center">
+
+### 💬 Let's Connect!
+
+I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+
+**Available for**:
+- 💼 Full-time opportunities
+- 🤝 Freelance projects
+- 👥 Collaboration on open source
+- 🎓 Mentoring and knowledge sharing
 
 </div>
 
@@ -235,4 +325,9 @@ Centro Universitario de la Ciénega - Ocotlán
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer" />
+
+  ![Visitor Count](https://profile-counter.glitch.me/andres-enciso/count.svg)
+
+  **Made with ❤️ using Jekyll & GitHub Pages**
+
 </div>

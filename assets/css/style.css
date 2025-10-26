@@ -210,6 +210,141 @@ hr {
     animation: fadeIn 0.5s ease-in;
 }
 
+/* Details/Summary (Collapsible sections) */
+details {
+    background-color: var(--bg-secondary);
+    border-left: 4px solid var(--primary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+details:hover {
+    box-shadow: var(--shadow);
+}
+
+details[open] {
+    background-color: var(--bg-color);
+    border-left-color: var(--secondary-color);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 0.5rem;
+    user-select: none;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary:hover {
+    color: var(--primary-color);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+table a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Badge containers */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* GitHub Stats Images */
+img[alt*="Stats"],
+img[alt*="Languages"],
+img[alt*="Streak"],
+img[alt*="Graph"],
+img[alt*="Trophies"] {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Hover effects for project links */
+.content a:hover {
+    transform: translateX(4px);
+    transition: transform 0.2s ease;
+}
+
 /* Dark mode support (optional - uncomment to enable) */
 /*
 @media (prefers-color-scheme: dark) {
@@ -219,6 +354,18 @@ hr {
         --bg-color: #111827;
         --bg-secondary: #1f2937;
         --border-color: #374151;
+    }
+
+    details {
+        background-color: var(--bg-secondary);
+    }
+
+    details[open] {
+        background-color: #1a1f2e;
+    }
+
+    th {
+        background-color: #1e40af;
     }
 }
 */
