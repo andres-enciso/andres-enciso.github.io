@@ -19,13 +19,13 @@ Visit the live site: [https://andres-enciso.github.io](https://andres-enciso.git
 
 ## 🚀 About Me
 
-I'm a passionate **FullStack Developer** with 5+ years of experience building robust web applications and managing complex database systems. Currently working as a **Database Administrator** at Tecnología y Diseño Industrial, where I handle SQL Server administration for multiple companies and develop business intelligence solutions.
+I'm a passionate **FullStack Developer** with 5+ years of experience building robust web applications and financial platforms. Currently working as a **Full Stack Developer** at Percapita, a leading Mexican fintech, where I develop credit card systems using Java, Micronaut, React, and AWS cloud services.
 
 ### 🎯 What I'm currently working on:
-- 🔧 Database administration and optimization for enterprise systems
-- 📊 Creating Power BI dashboards for business intelligence
-- 🏗️ Developing scalable web applications with modern frameworks
-- 🚀 Automating business processes and workflows
+- 💳 Building a new credit card platform at Percapita fintech
+- ☕ Developing microservices with Java and Micronaut
+- ☁️ Implementing cloud-native solutions with AWS (Cognito, RDS, ECS)
+- ⚛️ Creating modern UIs with React
 
 ---
 

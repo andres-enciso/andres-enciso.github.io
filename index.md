@@ -7,7 +7,7 @@ title: Home
 
 # Hi there! I'm Andrés Enciso 👋
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&multiline=true&width=800&height=100&lines=FullStack+Developer+%F0%9F%92%BB;Database+Administrator+%F0%9F%97%84%EF%B8%8F;5%2B+Years+of+Experience+%F0%9F%9A%80)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&multiline=true&width=800&height=100&lines=FullStack+Developer+%F0%9F%92%BB;Fintech+Engineer+%F0%9F%92%B3;5%2B+Years+of+Experience+%F0%9F%9A%80)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=andres-enciso&color=2563eb&style=for-the-badge&label=Profile+Views)
 ![GitHub followers](https://img.shields.io/github/followers/andres-enciso?style=for-the-badge&color=2563eb)
@@ -25,14 +25,14 @@ title: Home
 
 ## 🚀 About Me
 
-I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ years of experience building robust web applications and managing complex database systems. Currently working as a **Database Administrator** at Tecnología y Diseño Industrial, where I handle SQL Server administration for multiple companies and develop business intelligence solutions.
+I'm a passionate **FullStack Developer** with 5+ years of experience building robust web applications and financial platforms. Currently working as a **Full Stack Developer** at Percapita, a leading Mexican fintech, where I develop credit card systems using Java, Micronaut, React, and AWS cloud services.
 
 ### 🎯 What I'm currently working on:
-- 🗄️ Database administration and optimization for enterprise systems
-- 📊 Creating Power BI dashboards for business intelligence
-- 🏗️ Developing scalable web applications with modern frameworks
-- 🚀 Automating business processes and workflows
-- 💡 Implementing microservices architectures
+- 💳 Building a new credit card platform at Percapita fintech
+- ☕ Developing microservices with Java and Micronaut
+- ☁️ Implementing cloud-native solutions with AWS (Cognito, RDS, ECS)
+- ⚛️ Creating modern UIs with React
+- 🏗️ Designing scalable financial system architectures
 - 🤖 Exploring AI and Machine Learning applications
 
 ---
@@ -40,15 +40,30 @@ I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ 
 ## 💼 Professional Experience
 
 <details open>
-<summary><b>Database Administrator</b> - Tecnología y Diseño Industrial (Jul 2024 - Present)</summary>
+<summary><b>Full Stack Developer</b> - Percapita (Nov 2024 - Present)</summary>
 <br>
 
-- 🗄️ Manage SQL Server databases for 5+ corporate companies
-- 📈 Generate management reports through advanced queries from SAP Business One
-- 📊 Develop Power BI dashboards for commercial intelligence
-- 🔧 Handle technical incidents and provide ongoing support
-- 🔍 Support internal and external audits
-- ⚡ Automate business processes for improved efficiency
+*Fintech SOFOM with 15+ years in financial inclusion, associated with FinTech México*
+
+- 💳 Developing a new credit card platform from scratch
+- ☕ Building microservices architecture with Java and Micronaut framework
+- ⚛️ Frontend development with React for modern user interfaces
+- ☁️ Cloud infrastructure on AWS: Cognito, RDS, EC2, and ECS clusters
+- 🔧 Maintaining and enhancing the existing lending platform
+- 🏗️ Implementing scalable cloud-native financial solutions
+
+</details>
+
+<details>
+<summary><b>Database Administrator</b> - Tecnología y Diseño Industrial (Jul 2024 - Oct 2024)</summary>
+<br>
+
+- 🗄️ Managed SQL Server databases for 5+ corporate companies
+- 📈 Generated management reports through advanced queries from SAP Business One
+- 📊 Developed Power BI dashboards for commercial intelligence
+- 🔧 Handled technical incidents and provided ongoing support
+- 🔍 Supported internal and external audits
+- ⚡ Automated business processes for improved efficiency
 
 </details>
 
@@ -135,6 +150,7 @@ I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ 
 <div align="center">
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Micronaut](https://img.shields.io/badge/Micronaut-1A1A1A?style=for-the-badge&logo=micronaut&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![Symfony](https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
@@ -158,6 +174,7 @@ I'm a passionate **FullStack Developer** and **Database Administrator** with 5+ 
 ### **DevOps & Tools**
 <div align="center">
 
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
