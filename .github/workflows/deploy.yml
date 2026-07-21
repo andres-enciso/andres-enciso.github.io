@@ -27,7 +27,9 @@ jobs:
         uses: withastro/action@v3
         with:
           node-version: 22
-          package-manager: pnpm@latest
+          # pnpm 9 runs dependency build scripts (esbuild, sharp) automatically —
+          # pnpm 10+ blocks them and requires explicit approval.
+          package-manager: pnpm@9
           # Skip `astro check` (type-check) in CI — build only, matching Vercel's preset
           build-command: pnpm exec astro build
 
