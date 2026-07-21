@@ -1,0 +1,16 @@
+---
+import Section from "../Section.astro";
+import type { Translations } from "@/i18n";
+
+interface Props {
+	t: Translations["about"];
+}
+
+const { t } = Astro.props;
+---
+
+<Section title={t.title}>
+	<p>
+		{t.summary}
+	</p>
+</Section>

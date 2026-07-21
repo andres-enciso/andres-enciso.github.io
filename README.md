@@ -1,57 +1,113 @@
-# Andrés Enciso - Portfolio
+# Andrés Enciso - Dev Portfolio
 
-This is my personal portfolio website hosted on GitHub Pages.
+Bilingual (ES/EN) developer portfolio with print-friendly CV, built with Astro, Tailwind CSS v4, and Alpine.js.
 
-Visit the live site: [https://andres-enciso.github.io](https://andres-enciso.github.io)
+**🔗 Live: [andres-enciso.github.io](https://andres-enciso.github.io/es/) · [andresenciso.vercel.app](https://andresenciso.vercel.app/es/)**
 
-## Tech Stack
-- Jekyll for static site generation
-- GitHub Pages for hosting
-- Custom CSS and layouts
+![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=fff&style=flat)
 
----
+## Features
 
-# Hi there! I'm Andrés Enciso 👋
+- **Bilingual (ES/EN)** - i18n system with dynamic routes (`/es/`, `/en/`)
+- **Print-friendly** - Optimized layout for PDF export and printing
+- **Dark/Light mode** - System preference detection with manual override
+- **5 Color themes** - Default, blue, red, green, and cyber
+- **Command palette** - Keyboard shortcuts with `Cmd/Ctrl + K`
+- **Scroll animations** - Intersection Observer with `prefers-reduced-motion` support
+- **Project modals** - Clickable cards with image, description, highlights, and action buttons
+- **Skills by category** - Organized into Languages, Frameworks, Cloud & DB, and Tools
+- **Availability badge** - Animated "Available for work" indicator
+- **Contact CTA** - Call-to-action section with email and LinkedIn
+- **SEO** - Open Graph, Twitter Cards, JSON-LD, canonical URLs, hreflang, sitemap, robots.txt
+- **Responsive** - Mobile-first with Tailwind CSS v4
+- **Docker ready** - Multi-stage build with Nginx
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=FullStack%20Developer&fontSize=70&fontAlignY=35&animation=fadeIn" />
-</div>
+## Stack
 
-## 🚀 About Me
+- [**Astro**](https://astro.build/) - Static site generator
+- [**Tailwind CSS v4**](https://tailwindcss.com/) - Utility-first CSS with CSS-first config
+- [**Alpine.js**](https://alpinejs.dev/) - Lightweight JS for interactivity
+- [**TypeScript**](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [**HotKeyPad**](https://github.com/nicosommi/hotkeypad) - Command palette
+- [**Docker**](https://www.docker.com/) + [**Nginx**](https://nginx.org/) - Containerized deployment
 
-I'm a passionate **FullStack Developer** with 5+ years of experience building robust web applications and financial platforms. Currently working as a **Full Stack Developer** at Percapita, a leading Mexican fintech, where I develop credit card systems using Java, Micronaut, React, and AWS cloud services.
+## Getting Started
 
-### 🎯 What I'm currently working on:
-- 💳 Building a new credit card platform at Percapita fintech
-- ☕ Developing microservices with Java and Micronaut
-- ☁️ Implementing cloud-native solutions with AWS (Cognito, RDS, ECS)
-- ⚛️ Creating modern UIs with React
+### With Docker (recommended)
 
----
+```bash
+docker compose up -d --build
+```
 
-## 🛠️ Tech Stack
+Open [http://localhost:8080](http://localhost:8080) - redirects to `/es/`.
 
-### **Languages & Core Technologies**
-<div align="center">
+### Local development
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+```bash
+corepack enable
+corepack prepare pnpm@9 --activate
+pnpm install
+pnpm dev
+```
 
-</div>
+Open [http://localhost:4321](http://localhost:4321).
 
-### **Frontend Development**
-<div align="center">
+## Project Structure
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.s)
+```
+src/
+├── i18n/
+│   ├── types.ts          # TypeScript interfaces
+│   ├── es.ts             # Spanish translations & content
+│   ├── en.ts             # English translations & content
+│   └── index.ts          # getTranslations() helper
+├── components/
+│   └── sections/
+│       ├── Hero.astro        # Name, photo, availability badge, social links
+│       ├── About.astro       # Summary
+│       ├── Experience.astro  # Work history with expand/collapse
+│       ├── Projects.astro    # Project cards with modal detail view
+│       ├── Skills.astro      # Skills organized by category
+│       ├── Languages.astro   # Spoken languages
+│       ├── Education.astro   # Degrees & certificates
+│       └── Contact.astro     # CTA with email & LinkedIn
+├── pages/
+│   ├── index.astro           # Redirects to /es/
+│   └── [lang]/index.astro    # Dynamic route for ES/EN
+├── layouts/
+│   └── Layout.astro          # SEO, themes, scroll observer
+├── config.ts                 # Site URL constant
+└── styles/
+    └── global.css            # Themes & scroll animations
+```
+
+## Content
+
+All content lives in `src/i18n/es.ts` and `src/i18n/en.ts`. Edit these files to update your CV.
+
+## Themes
+
+Change the theme in `src/layouts/Layout.astro`:
+
+```ts
+const theme = "blue"; // default | blue | red | green | cyber
+```
+
+Each theme has light and dark mode variants. Custom themes can be added in `src/styles/global.css`.
+
+## Commands
+
+| Command | Action |
+| :--- | :--- |
+| `pnpm dev` | Start dev server at `localhost:4321` |
+| `pnpm build` | Type-check and build to `./dist/` |
+| `pnpm preview` | Preview production build |
+| `docker compose up -d --build` | Build and serve with Docker + Nginx |
+
+## Based on
+
+[Smilesharks/dev-portfolio](https://github.com/Smilesharks/dev-portfolio) - Original template by Smilesharks, based on [Bartosz Jarocki](https://github.com/BartoszJarocki/cv) and [Miguel Ángel Durán](https://github.com/midudev/minimalist-portfolio-json).

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 16px; }
+    text { fill: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #ffffff; }
+    }
+  </style>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle">AE</text>
+</svg>

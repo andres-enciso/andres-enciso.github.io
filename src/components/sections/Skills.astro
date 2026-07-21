@@ -1,0 +1,113 @@
+---
+import Section from "../Section.astro";
+import type { Translations } from "@/i18n";
+
+import JavaScript from "@/icons/javascript.astro";
+import TypeScript from "@/icons/type.astro";
+import React from "@/icons/react.astro";
+import MySQL from "@/icons/sql.astro";
+import Git from "@/icons/git.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Java from "@/icons/Java.astro";
+import Python from "@/icons/Python.astro";
+import AWS from "@/icons/AWS.astro";
+import PHP from "@/icons/PHP.astro";
+import Docker from "@/icons/Docker.astro";
+import CSharp from "@/icons/CSharp.astro";
+import PowerBI from "@/icons/PowerBI.astro";
+import Node from "@/icons/node.astro";
+import SQLServer from "@/icons/SQLServer.astro";
+import Vue from "@/icons/Vue.astro";
+import Tailwind from "@/icons/tailwind.astro";
+import HTML from "@/icons/html.astro";
+import CSS from "@/icons/css.astro";
+import Laravel from "@/icons/Laravel.astro";
+import FastAPI from "@/icons/FastAPI.astro";
+import Linux from "@/icons/Linux.astro";
+import AstroIcon from "@/icons/Astro.astro";
+import GoogleCloud from "@/icons/GoogleCloud.astro";
+import PostgreSQL from "@/icons/PostgreSQL.astro";
+import Bootstrap from "@/icons/Bootstrap.astro";
+import Vite from "@/icons/Vite.astro";
+import Nginx from "@/icons/Nginx.astro";
+import Postman from "@/icons/Postman.astro";
+import MongoDB from "@/icons/MongoDB.astro";
+import Figma from "@/icons/Figma.astro";
+
+interface Props {
+	t: Translations["skills"];
+	className?: string;
+}
+
+const { t, className } = Astro.props;
+
+const SKILLS_ICONS: Record<string, any> = {
+	Java,
+	Python,
+	JavaScript,
+	TypeScript,
+	PHP,
+	"C#": CSharp,
+	HTML,
+	CSS,
+	SQL: MySQL,
+	React,
+	"React Native": React,
+	"Node.js": Node,
+	"Vue.js": Vue,
+	Micronaut: Java,
+	".NET": CSharp,
+	Laravel,
+	FastAPI,
+	"Tailwind CSS": Tailwind,
+	Astro: AstroIcon,
+	AWS,
+	MySQL,
+	"SQL Server": SQLServer,
+	Linux,
+	Docker,
+	Git,
+	GitHub,
+	"Power BI": PowerBI,
+	"Google Cloud": GoogleCloud,
+	PostgreSQL,
+	Bootstrap,
+	"Alpine.js": null,
+	Vite,
+	jQuery: JavaScript,
+	"Windows Server": null,
+	Nginx,
+	Postman,
+	MongoDB,
+	Express: Node,
+	Figma,
+	Notion: null,
+	Scrum: null,
+	Jira: null,
+	Trello: null,
+};
+---
+
+<Section className={className} title={t.title}>
+	<div class="flex flex-col gap-5">
+		{
+			t.categories.map((category) => (
+				<div>
+					<h4 class="mb-2 text-xs font-semibold uppercase tracking-wider text-skin-muted">
+						{category.name}
+					</h4>
+					<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-2 [&>li>svg]:size-4 [&>li]:text-sm">
+						{category.items.map(({ name }) => {
+							const Icon = SKILLS_ICONS[name];
+							return (
+								<li class="flex items-center gap-1.5 rounded-md bg-skin-button-muted/50 px-2.5 py-1 text-xs text-skin-muted ring-1 ring-skin-muted/20 print:bg-transparent print:p-0 print:ring-0 print:text-zinc-800">
+									{Icon && <Icon />} <span>{name}</span>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			))
+		}
+	</div>
+</Section>
