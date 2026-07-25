@@ -101,6 +101,7 @@ export interface Translations {
       url: string;
       github?: string;
       image?: string;
+      emoji?: string;
       skills?: string[];
     }>;
   };
@@ -109,6 +110,20 @@ export interface Translations {
     subtitle: string;
     emailButton: string;
     linkedinButton: string;
+  };
+  dock: {
+    downloadCv: string;
+    cvUrl: string;
+    github: string;
+    linkedin: string;
+    theme: string;
+    language: string;
+  };
+  notFound: {
+    code: string;
+    title: string;
+    message: string;
+    back: string;
   };
   footer: {
     cmdK: string;

@@ -11,8 +11,7 @@ import Skills from "@/components/sections/Skills.astro";
 import Languages from "@/components/sections/Languages.astro";
 import Contact from "@/components/sections/Contact.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
-import ThemeSwitch from "@/components/ThemeSwitch.astro";
-import LanguageSwitch from "@/components/LanguageSwitch.astro";
+import Dock from "@/components/Dock.astro";
 
 export function getStaticPaths() {
 	return [{ params: { lang: "es" } }, { params: { lang: "en" } }];
@@ -29,10 +28,6 @@ const altLang: Lang = lang === "es" ? "en" : "es";
 			<Hero t={t.hero} />
 			<About t={t.about} />
 			<Languages t={t.languages} />
-			<div class="no-print flex flex-wrap gap-2">
-				<LanguageSwitch lang={lang} />
-				<ThemeSwitch />
-			</div>
 		</div>
 		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
 			<Experience t={t.experience} className="print:col-span-3" />
@@ -42,6 +37,13 @@ const altLang: Lang = lang === "es" ? "en" : "es";
 			<Contact t={t.contact} email={t.hero.email} linkedinUrl={t.hero.profiles.find(p => p.network === "LinkedIn")?.url || ""} />
 		</div>
 	</main>
+
+	<Dock
+		t={t.dock}
+		lang={lang}
+		github={t.hero.profiles.find(p => p.network === "GitHub")?.url || ""}
+		linkedin={t.hero.profiles.find(p => p.network === "LinkedIn")?.url || ""}
+	/>
 
 	<KeyboardManager t={t.footer} />
 </Layout>

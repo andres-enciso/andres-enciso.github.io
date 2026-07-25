@@ -19,7 +19,7 @@ const hiddenItems = t.items.slice(VISIBLE_COUNT);
 	<div x-data="{ expanded: false }">
 		<div class="grid grid-cols-1 gap-4 md:grid-cols-2 print:flex print:flex-col">
 			{
-				visibleItems.map(({ url, description, highlights, name, isActive, github, image, skills }) => (
+				visibleItems.map(({ url, description, highlights, name, isActive, github, image, emoji, skills }) => (
 					<div x-data="{ open: false }">
 						<button
 							@click="open = true"
@@ -38,9 +38,9 @@ const hiddenItems = t.items.slice(VISIBLE_COUNT);
 							<div class="flex flex-1 flex-col p-5">
 								<div class="flex items-center gap-2">
 									{!image && (
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder size-4 shrink-0 text-skin-hue">
-											<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-										</svg>
+										<span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-skin-muted/40 text-lg leading-none transition-all duration-200 group-hover:border-b-[3px] group-hover:border-skin-hue">
+											{emoji || "📁"}
+										</span>
 									)}
 									<span class="text-lg font-medium text-skin-base transition-colors group-hover:text-skin-hue">{name}</span>
 								</div>
@@ -144,9 +144,9 @@ const hiddenItems = t.items.slice(VISIBLE_COUNT);
 
 		{hiddenItems.length > 0 && (
 			<div x-show="expanded" x-collapse class="mt-4">
-				<div class="grid grid-cols-1 gap-4 md:grid-cols-2 print:flex print:flex-col">
+				<div class="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))] print:flex print:flex-col">
 					{
-						hiddenItems.map(({ url, description, highlights, name, isActive, github, image, skills }) => (
+						hiddenItems.map(({ url, description, highlights, name, isActive, github, image, emoji, skills }) => (
 							<div x-data="{ open: false }">
 								<button
 									@click="open = true"

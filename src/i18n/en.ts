@@ -411,6 +411,21 @@ export const en: Translations = {
     emailButton: "Send email",
     linkedinButton: "Visit LinkedIn",
   },
+  dock: {
+    downloadCv: "Download CV",
+    cvUrl: "/cv-en.pdf",
+    github: "GitHub",
+    linkedin: "LinkedIn",
+    theme: "Theme",
+    language: "Español",
+  },
+  notFound: {
+    code: "404",
+    title: "Page not found",
+    message:
+      "The page you're looking for doesn't exist or was moved. Let's get you back on track.",
+    back: "Back to home",
+  },
   footer: {
     cmdK: "Press Cmd + K to open the command palette.",
     printResume: "Print Resume",
