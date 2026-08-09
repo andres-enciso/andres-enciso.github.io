@@ -88,7 +88,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 {summary && (
                   <div class="flex flex-col gap-1">
                     <h4>{t.labels.summary}</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                    <ul class="exp-tasks text-skin-muted [&>li]:ml-4 flex flex-col gap-2">
                       {Array.isArray(summary) ? (
                         summary.map(item => (
                           {item}
@@ -105,7 +105,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
                     <h4>{t.labels.responsibilities}</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                    <ul class="exp-tasks text-skin-muted [&>li]:ml-4 flex flex-col gap-2">
                       {responsibilities.map(responsibility => (
                         <li>{responsibility}</li>
                       ))}
@@ -116,7 +116,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 {achievements && (
                   <div class="flex flex-col gap-1">
                     <h4>{t.labels.achievements}</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                    <ul class="exp-tasks text-skin-muted [&>li]:ml-4 flex flex-col gap-2">
                       {achievements.map(achievement => (
                         <li>{achievement}</li>
                       ))}
@@ -155,4 +155,92 @@ const SKILLS_ICONS: Record<string, any> = {
   li::marker {
     color: var(--color-accent);
   }
+
+  /* "Tasks completing" animation for experience bullets */
+  .exp-tasks > li {
+    position: relative;
+    list-style: none;
+    padding-left: 1.5rem;
+  }
+
+  /* Incomplete state: dashed hollow ring */
+  .exp-tasks > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    border: 2px dashed var(--color-muted);
+    background: transparent;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* The check mark (hidden until done) */
+  .exp-tasks > li::after {
+    content: "";
+    position: absolute;
+    left: 0.31rem;
+    top: 0.46em;
+    width: 0.26rem;
+    height: 0.5rem;
+    border: solid var(--color-text-inverted);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.25s ease 0.1s;
+  }
+
+  /* Completed state */
+  .exp-tasks > li.done::before {
+    border: 2px solid var(--color-accent);
+    background: var(--color-accent);
+  }
+
+  .exp-tasks > li.done::after {
+    transform: rotate(45deg) scale(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .exp-tasks > li::before,
+    .exp-tasks > li::after {
+      transition: none;
+    }
+  }
+
+  @media print {
+    .exp-tasks > li::before {
+      border: 2px solid var(--color-accent);
+      background: var(--color-accent);
+    }
+    .exp-tasks > li::after {
+      transform: rotate(45deg) scale(1);
+    }
+  }
 </style>
+
+<script>
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const items = Array.from(document.querySelectorAll<HTMLElement>(".exp-tasks > li"));
+
+  if (prefersReduced) {
+    items.forEach((el) => el.classList.add("done"));
+  } else {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            const siblings = Array.from(el.parentElement?.children ?? []);
+            const idx = siblings.indexOf(el);
+            setTimeout(() => el.classList.add("done"), idx * 130);
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    items.forEach((el) => observer.observe(el));
+  }
+</script>

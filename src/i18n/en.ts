@@ -4,11 +4,11 @@ export const en: Translations = {
   layout: {
     title: "Andrés Enciso - Portfolio - Senior Full Stack Developer",
     description:
-      "Senior developer with 6+ years of experience building and operating end-to-end software systems: backend, frontend, databases, and cloud infrastructure.",
+      "Senior developer with 7 years of experience building and operating end-to-end software systems: Java backend on AWS, frontend, databases, and cloud infrastructure in regulated fintech.",
   },
   hero: {
     name: "Andrés Enciso",
-    label: "Senior Full Stack Developer",
+    label: "Senior Full Stack Developer · Java/AWS Backend · Regulated Fintech",
     availableBadge: "Available for work",
     image: "/me_avatar.jpg",
     city: "Guadalajara",
@@ -27,7 +27,7 @@ export const en: Translations = {
   about: {
     title: "About",
     summary:
-      "Senior developer with 6+ years of experience building and operating end-to-end software systems: backend, frontend, databases, and cloud infrastructure. Currently leading the development and operation of Java/Micronaut microservices on AWS for a regulated financial institution (SOFOM E.N.R.), supporting credit products, card issuance, and SPEI disbursements. My expertise combines backend architecture (Java, Micronaut, Python, Node.js, PHP), modern frontend (React, Vite), AWS administration (ECS, RDS, Cognito, Secrets Manager, SSM, Route 53), and relational database management at scale (MySQL, SQL Server).",
+      "Senior developer with 7 years of experience building and operating end-to-end systems: backend, frontend, databases, and cloud infrastructure. Today I lead the development and operation of Java/Micronaut microservices on AWS for a regulated financial institution (SOFOM E.N.R.), keeping three products live under financial regulation —nationwide credit origination, credit-card issuance, and SPEI disbursements—. That means designing the architecture, running the infrastructure, integrating external platforms, and being the one who responds when something breaks at 2 a.m.\n\nBefore fintech I worked across government, enterprise, and agency settings: SQL Server databases at scale, real-time systems with Java and WebSocket, and web apps with PHP, .NET, Laravel, and Vue. That mix is why I can take a problem from requirement to deployment without depending on three separate teams.",
   },
   experience: {
     title: "Experience",
@@ -190,43 +190,56 @@ export const en: Translations = {
         ],
       },
       {
-        name: "Frameworks",
+        name: "Backend",
+        items: [
+          { name: "Micronaut" },
+          { name: "FastAPI" },
+          { name: "Node.js" },
+          { name: "Express" },
+          { name: "Laravel" },
+          { name: ".NET" },
+        ],
+      },
+      {
+        name: "Frontend",
         items: [
           { name: "React" },
           { name: "React Native" },
-          { name: "Node.js" },
           { name: "Vue.js" },
-          { name: "Micronaut" },
-          { name: ".NET" },
-          { name: "Laravel" },
-          { name: "FastAPI" },
-          { name: "Tailwind CSS" },
-          { name: "Bootstrap" },
           { name: "Astro" },
-          { name: "Alpine.js" },
           { name: "Vite" },
-          { name: "Express" },
+          { name: "Tailwind CSS" },
+          { name: "Alpine.js" },
+          { name: "Bootstrap" },
           { name: "jQuery" },
         ],
       },
       {
-        name: "Cloud & Databases",
+        name: "Cloud & Infrastructure",
         items: [
           { name: "AWS" },
+          { name: "ECS Fargate" },
+          { name: "RDS" },
+          { name: "Cognito" },
+          { name: "Docker" },
+          { name: "Nginx" },
+          { name: "Linux" },
+          { name: "Windows Server" },
           { name: "Google Cloud" },
+        ],
+      },
+      {
+        name: "Databases",
+        items: [
           { name: "MySQL" },
           { name: "SQL Server" },
           { name: "PostgreSQL" },
           { name: "MongoDB" },
-          { name: "Linux" },
-          { name: "Windows Server" },
-          { name: "Nginx" },
         ],
       },
       {
         name: "Tools",
         items: [
-          { name: "Docker" },
           { name: "Git" },
           { name: "GitHub" },
           { name: "Power BI" },
@@ -245,7 +258,7 @@ export const en: Translations = {
     title: "Languages",
     items: [
       { language: "Spanish", level: "Native" },
-      { language: "English", level: "B1-B2" },
+      { language: "English", level: "B1-B2 · technical reading and intermediate conversation" },
     ],
   },
   education: {
@@ -350,58 +363,17 @@ export const en: Translations = {
         name: "Personal Portfolio",
         isActive: true,
         description:
-          "Bilingual (ES/EN) portfolio website with theme support, command palette, scroll animations, and SEO optimization. Built with Astro, Tailwind CSS v4, and Alpine.js.",
+          "Bilingual (ES/EN) portfolio website with theme support, command palette, scroll animations, a floating dock, and SEO optimization. Built with Astro, Tailwind CSS v4, and Alpine.js, deployed on Vercel and GitHub Pages.",
         highlights: [
           "i18n system with dynamic routes",
           "5 themes with light/dark mode",
+          "Floating dock and command palette",
           "Exportable to PDF",
         ],
-        url: "https://andresenciso.dev",
+        url: "https://andres-enciso.github.io",
         github: "https://github.com/andres-enciso/dev-portfolio",
-        image: "/projects/portfolio.png",
-        skills: ["Astro", "Tailwind CSS", "TypeScript"],
-      },
-      {
-        name: "Personal Portfolio 2",
-        isActive: true,
-        description:
-          "Bilingual (ES/EN) portfolio website with theme support, command palette, scroll animations, and SEO optimization. Built with Astro, Tailwind CSS v4, and Alpine.js.",
-        highlights: [
-          "i18n system with dynamic routes",
-          "5 themes with light/dark mode",
-          "Exportable to PDF",
-        ],
-        url: "https://andresenciso.dev",
-        github: "https://github.com/andres-enciso/dev-portfolio",
-        image: "/projects/portfolio.png",
-        skills: ["Astro", "Tailwind CSS", "TypeScript"],
-      },
-      {
-        name: "Personal Portfolio 3",
-        isActive: true,
-        description:
-          "Bilingual (ES/EN) portfolio website with theme support, command palette, scroll animations, and SEO optimization. Built with Astro, Tailwind CSS v4, and Alpine.js.",
-        highlights: [
-          "i18n system with dynamic routes",
-          "5 themes with light/dark mode",
-          "Exportable to PDF",
-        ],
-        url: "https://andresenciso.dev",
-        github: "https://github.com/andres-enciso/dev-portfolio",
-        image: "/projects/portfolio.png",
-        skills: ["Astro", "Tailwind CSS", "TypeScript"],
-      },
-      {
-        name: "Personal Portfolio 4",
-        isActive: false,
-        description:
-          "Example without image or GitHub, just description and highlights to see the folder icon card style.",
-        highlights: [
-          "Feature one",
-          "Feature two",
-        ],
-        url: "",
-        skills: ["React", "Node.js", "Docker"],
+        emoji: "🖥️",
+        skills: ["Astro", "Tailwind CSS", "TypeScript", "Alpine.js"],
       },
     ],
   },

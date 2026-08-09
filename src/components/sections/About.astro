@@ -10,7 +10,5 @@ const { t } = Astro.props;
 ---
 
 <Section title={t.title}>
-	<p>
-		{t.summary}
-	</p>
+	{t.summary.split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
 </Section>

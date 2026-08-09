@@ -4,11 +4,11 @@ export const es: Translations = {
   layout: {
     title: "Andrés Enciso - Portafolio - Desarrollador Senior Full Stack",
     description:
-      "Desarrollador senior con más de 6 años de experiencia construyendo y operando sistemas de software de extremo a extremo: backend, frontend, bases de datos e infraestructura cloud.",
+      "Desarrollador senior con 7 años de experiencia construyendo y operando sistemas de software de extremo a extremo: backend en Java sobre AWS, frontend, bases de datos e infraestructura cloud en fintech regulada.",
   },
   hero: {
     name: "Andrés Enciso",
-    label: "Desarrollador Senior Full Stack",
+    label: "Desarrollador Senior Full Stack · Backend Java/AWS · Fintech regulada",
     availableBadge: "Disponible para trabajar",
     image: "/me_avatar.jpg",
     city: "Guadalajara",
@@ -27,7 +27,7 @@ export const es: Translations = {
   about: {
     title: "Sobre mí",
     summary:
-      "Desarrollador senior con más de 6 años de experiencia construyendo y operando sistemas de software de extremo a extremo: backend, frontend, bases de datos e infraestructura cloud. Actualmente lidero el desarrollo y la operación de microservicios en Java/Micronaut sobre AWS para una SOFOM E.N.R., sustentando productos de crédito, tarjetas y dispersiones SPEI en un entorno financiero regulado. Mi experiencia combina arquitectura backend (Java, Micronaut, Python, Node.js, PHP), frontend moderno (React, Vite), administración de AWS (ECS, RDS, Cognito, Secrets Manager, SSM, Route 53) y administración de bases de datos relacionales a escala (MySQL, SQL Server).",
+      "Desarrollador senior con 7 años de experiencia construyendo y operando sistemas de extremo a extremo: backend, frontend, bases de datos e infraestructura cloud. Hoy lidero el desarrollo y la operación de microservicios en Java/Micronaut sobre AWS para una SOFOM E.N.R., sosteniendo tres productos en producción bajo regulación financiera —originación de crédito a escala nacional, emisión de tarjeta de crédito y dispersiones SPEI—. Eso significa diseñar la arquitectura, administrar la infraestructura, integrar plataformas externas y responder cuando algo falla a las 2 de la mañana.\n\nAntes de la fintech pasé por gobierno, corporativo y agencia: bases de datos SQL Server a escala, sistemas en tiempo real con Java y WebSocket, y aplicaciones web con PHP, .NET, Laravel y Vue. Esa mezcla es la razón por la que puedo tomar un problema desde el requerimiento hasta el despliegue sin depender de tres equipos distintos.",
   },
   experience: {
     title: "Experiencia",
@@ -190,43 +190,56 @@ export const es: Translations = {
         ],
       },
       {
-        name: "Frameworks",
+        name: "Backend",
+        items: [
+          { name: "Micronaut" },
+          { name: "FastAPI" },
+          { name: "Node.js" },
+          { name: "Express" },
+          { name: "Laravel" },
+          { name: ".NET" },
+        ],
+      },
+      {
+        name: "Frontend",
         items: [
           { name: "React" },
           { name: "React Native" },
-          { name: "Node.js" },
           { name: "Vue.js" },
-          { name: "Micronaut" },
-          { name: ".NET" },
-          { name: "Laravel" },
-          { name: "FastAPI" },
-          { name: "Tailwind CSS" },
-          { name: "Bootstrap" },
           { name: "Astro" },
-          { name: "Alpine.js" },
           { name: "Vite" },
-          { name: "Express" },
+          { name: "Tailwind CSS" },
+          { name: "Alpine.js" },
+          { name: "Bootstrap" },
           { name: "jQuery" },
         ],
       },
       {
-        name: "Cloud y Bases de datos",
+        name: "Cloud e infraestructura",
         items: [
           { name: "AWS" },
+          { name: "ECS Fargate" },
+          { name: "RDS" },
+          { name: "Cognito" },
+          { name: "Docker" },
+          { name: "Nginx" },
+          { name: "Linux" },
+          { name: "Windows Server" },
           { name: "Google Cloud" },
+        ],
+      },
+      {
+        name: "Bases de datos",
+        items: [
           { name: "MySQL" },
           { name: "SQL Server" },
           { name: "PostgreSQL" },
           { name: "MongoDB" },
-          { name: "Linux" },
-          { name: "Windows Server" },
-          { name: "Nginx" },
         ],
       },
       {
         name: "Herramientas",
         items: [
-          { name: "Docker" },
           { name: "Git" },
           { name: "GitHub" },
           { name: "Power BI" },
@@ -245,7 +258,7 @@ export const es: Translations = {
     title: "Idiomas",
     items: [
       { language: "Español", level: "Nativo" },
-      { language: "Inglés", level: "B1-B2" },
+      { language: "Inglés", level: "B1-B2 · lectura técnica y conversación intermedia" },
     ],
   },
   education: {
@@ -350,58 +363,17 @@ export const es: Translations = {
         name: "Portafolio Personal",
         isActive: true,
         description:
-          "Portafolio web bilingüe (ES/EN) con soporte de temas, paleta de comandos, animaciones de scroll y optimización SEO. Construido con Astro, Tailwind CSS v4 y Alpine.js.",
+          "Portafolio web bilingüe (ES/EN) con soporte de temas, paleta de comandos, animaciones de scroll, dock flotante y optimización SEO. Construido con Astro, Tailwind CSS v4 y Alpine.js, desplegado en Vercel y GitHub Pages.",
         highlights: [
           "Sistema i18n con rutas dinámicas",
           "5 temas con modo claro/oscuro",
+          "Dock flotante y paleta de comandos",
           "Exportable a PDF",
         ],
-        url: "https://andresenciso.dev",
+        url: "https://andres-enciso.github.io",
         github: "https://github.com/andres-enciso/dev-portfolio",
-        image: "/projects/portfolio.png",
-        skills: ["Astro", "Tailwind CSS", "TypeScript"],
-      },
-      {
-        name: "Portafolio Personal 2",
-        isActive: true,
-        description:
-          "Portafolio web bilingüe (ES/EN) con soporte de temas, paleta de comandos, animaciones de scroll y optimización SEO. Construido con Astro, Tailwind CSS v4 y Alpine.js.",
-        highlights: [
-          "Sistema i18n con rutas dinámicas",
-          "5 temas con modo claro/oscuro",
-          "Exportable a PDF",
-        ],
-        url: "https://andresenciso.dev",
-        github: "https://github.com/andres-enciso/dev-portfolio",
-        image: "/projects/portfolio.png",
-        skills: ["Astro", "Tailwind CSS", "TypeScript"],
-      },
-      {
-        name: "Portafolio Personal 3",
-        isActive: true,
-        description:
-          "Portafolio web bilingüe (ES/EN) con soporte de temas, paleta de comandos, animaciones de scroll y optimización SEO. Construido con Astro, Tailwind CSS v4 y Alpine.js.",
-        highlights: [
-          "Sistema i18n con rutas dinámicas",
-          "5 temas con modo claro/oscuro",
-          "Exportable a PDF",
-        ],
-        url: "https://andresenciso.dev",
-        github: "https://github.com/andres-enciso/dev-portfolio",
-        image: "/projects/portfolio.png",
-        skills: ["Astro", "Tailwind CSS", "TypeScript"],
-      },
-      {
-        name: "Portafolio Personal 4",
-        isActive: false,
-        description:
-          "Ejemplo sin imagen ni GitHub, solo con descripción y highlights para ver cómo se ve la card con el ícono de folder.",
-        highlights: [
-          "Feature uno",
-          "Feature dos",
-        ],
-        url: "",
-        skills: ["React", "Node.js", "Docker"],
+        emoji: "🖥️",
+        skills: ["Astro", "Tailwind CSS", "TypeScript", "Alpine.js"],
       },
     ],
   },
