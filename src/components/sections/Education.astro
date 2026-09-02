@@ -110,4 +110,49 @@ const allCertificates = [...t.mainCertificates, ...t.otherCertificates];
 			</div>
 		)
 	}
+
+	{
+		t.labs.length > 0 && (
+			<div x-data="{ expandedLabs: false }" class="mt-4">
+				<h4>{t.labsTitle}</h4>
+				<ul class="space-y-4 py-3 print:space-y-0" x-show="expandedLabs" x-collapse>
+					{t.labs.map(({ name, date, issuer, url }) => {
+						const labYear = new Date(date).getFullYear();
+						return (
+							<div class="flex items-baseline">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 hidden h-5 w-5 self-start md:inline-block print:hidden">
+									<path d="M10 2v7.31" />
+									<path d="M14 9.3V1.99" />
+									<path d="M8.5 2h7" />
+									<path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
+									<path d="M5.52 16h12.96" />
+								</svg>
+								<div class="relative w-full items-baseline justify-between gap-2">
+									<h3 class="mr-6 items-baseline gap-x-2 gap-y-0.5 font-medium">
+										{url ? (
+											<a class="hover:text-skin-hue group flex items-center gap-[6px] text-skin-base decoration-dotted underline-offset-[5px] hover:underline" href={url} target="_blank">
+												{name}
+											</a>
+										) : (
+											<span>{name}</span>
+										)}
+									</h3>
+									<div class="text-sm text-skin-muted">{issuer}</div>
+									<time class="right-0 top-0 text-xs text-skin-muted md:absolute md:block">{labYear}</time>
+								</div>
+							</div>
+						);
+					})}
+				</ul>
+
+				<button
+					@click="expandedLabs = !expandedLabs"
+					class="print:hidden group/labs mt-2 w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all hover:text-skin-base flex"
+				>
+					<span x-text={`expandedLabs ? '${t.labels.showLess}' : '${t.labels.showMore} (${t.labs.length})'`}>{t.labels.showMore} ({t.labs.length})</span>
+					<svg class="w-4 h-4 group-hover/labs:translate-y-0.5 duration-200 ease-out" :class="{ 'rotate-180': expandedLabs }" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+				</button>
+			</div>
+		)
+	}
 </Section>

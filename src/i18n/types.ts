@@ -59,6 +59,7 @@ export interface Translations {
   education: {
     title: string;
     certificatesTitle: string;
+    labsTitle: string;
     labels: {
       showMore: string;
       showLess: string;
@@ -78,6 +79,12 @@ export interface Translations {
       url: string;
     }>;
     otherCertificates: Array<{
+      name: string;
+      date: string;
+      issuer: string;
+      url: string;
+    }>;
+    labs: Array<{
       name: string;
       date: string;
       issuer: string;
